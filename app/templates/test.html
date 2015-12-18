@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for line in users %}
+    <p> account:{{line.account}}<br>
+        State:{{line.state}}{{job_state(line.state)}}</p>
+   {% endfor %}
+
+</body>
+</html>
